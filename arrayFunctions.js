@@ -10,20 +10,10 @@
  */
 function getOdds(numbers) {
   return numbers.filter(function (number) {
-    return number % 2 !== 0;
+    return number % 2 === 1;
   });
 }
 
-/**
- * getEvens(numbers):
- * - receives an array of numbers called `numbers`
- * - filters the `numbers` array in order to...
- * - returns an array of only EVEN numbers.
- *
- * e.g.
- * getEvens([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [2, 4, 6, 8]
- * getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [52, 14, 56, 888]
- */
 function getEvens(numbers) {
   return numbers.filter(function (number) {
     return number % 2 === 0;
@@ -46,13 +36,6 @@ function countOccurences(x, numbers) {
   });
   return count;
 }
-
-// function countOccurences(x, numbers) {
-//   let numOccurances = numbers.filter(function (number) {
-//     return number === x;
-//   });
-//   return numOccurances.length;
-// }
 
 /**
  * makeThemDoctors(students):
